@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 MBTI 분석 리포트</title>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 3px solid #4CAF50; padding-bottom: 10px; }
+        h2 { color: #4CAF50; margin-top: 0; }
+        .mbti-type { font-size: 48px; font-weight: bold; text-align: center; color: #2196F3; letter-spacing: 8px; }
+        .dimension { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee; }
+        .dimension:last-child { border-bottom: none; }
+        .dim-label { font-weight: bold; color: #666; }
+        .dim-result { font-size: 24px; font-weight: bold; color: #4CAF50; }
+        .confidence { font-size: 12px; padding: 4px 8px; border-radius: 12px; }
+        .confidence-높음 { background: #4CAF50; color: white; }
+        .confidence-중간 { background: #FF9800; color: white; }
+        .confidence-낮음 { background: #9E9E9E; color: white; }
+        .reason { font-size: 14px; color: #666; margin-top: 8px; }
+        .summary { background: #E3F2FD; padding: 16px; border-radius: 8px; line-height: 1.6; }
+        .marketing { background: #FFF3E0; padding: 16px; border-radius: 8px; line-height: 1.6; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .info-item { padding: 8px; background: #f9f9f9; border-radius: 4px; }
+        .info-label { font-size: 12px; color: #999; }
+        .info-value { font-size: 16px; font-weight: bold; color: #333; }
+        pre { background: #f5f5f5; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎯 고객 MBTI 분석 리포트</h1>
+        <p>고객 ID: P+Z/Uf3aIO2SOKwlqj+4...</p>
+    </div>
+    
+    <div class="card">
+        <h2>📊 기본 정보</h2>
+        <div class="info-grid">
+            <div class="info-item"><div class="info-label">연령</div><div class="info-value">62세</div></div>
+            <div class="info-item"><div class="info-label">지역</div><div class="info-value">인천광역시</div></div>
+            <div class="info-item"><div class="info-label">회원등급</div><div class="info-value">DIAMOND</div></div>
+            <div class="info-item"><div class="info-label">총주문</div><div class="info-value">2건 / 113,600원</div></div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>🧠 MBTI 분석 결과</h2>
+        <div class="mbti-type">xSxJ</div>
+    </div>
+    
+    <div class="card">
+        <h2>📈 차원별 분석</h2>
+        
+        <div class="dimension">
+            <div>
+                <div class="dim-label">E(외향) vs I(내향)</div>
+                <div class="reason">쇼핑 데이터만으로 판단 어려움</div>
+            </div>
+            <div style="text-align: right;">
+                <div class="dim-result">x</div>
+                <span class="confidence confidence-낮음">낮음</span>
+            </div>
+        </div>
+        
+        <div class="dimension">
+            <div>
+                <div class="dim-label">S(감각) vs N(직관)</div>
+                <div class="reason">고객은 구체적인 제품(알부민967, 소가죽 스니커즈)을 구매하였고, 건강식품 카테고리에 집중하여 실질적인 정보를 중시하는 것으로 보임</div>
+            </div>
+            <div style="text-align: right;">
+                <div class="dim-result">S</div>
+                <span class="confidence confidence-높음">높음</span>
+            </div>
+        </div>
+        
+        <div class="dimension">
+            <div>
+                <div class="dim-label">T(사고) vs F(감정)</div>
+                <div class="reason">구매한 제품이 건강과 관련된 기능성 제품으로, 논리적이고 분석적인 접근을 통해 선택했을 가능성이 있음. 그러나 감정적 요소도 고려될 수 있음</div>
+            </div>
+            <div style="text-align: right;">
+                <div class="dim-result">T</div>
+                <span class="confidence confidence-중간">중간</span>
+            </div>
+        </div>
+        
+        <div class="dimension">
+            <div>
+                <div class="dim-label">J(판단) vs P(인식)</div>
+                <div class="reason">주문 건수가 적고, 특정 제품에 대한 명확한 선택을 보였으나, 추가적인 주문 패턴이 없어 확신이 낮음</div>
+            </div>
+            <div style="text-align: right;">
+                <div class="dim-result">J</div>
+                <span class="confidence confidence-중간">중간</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>💡 종합 분석</h2>
+        <div class="summary">이 고객은 건강과 관련된 구체적인 제품에 관심이 있으며, 논리적이고 체계적인 접근을 통해 쇼핑을 하는 경향이 있습니다. 다만, 외향성/내향성에 대한 정보가 부족하여 정확한 판단이 어렵습니다.</div>
+    </div>
+    
+    <div class="card">
+        <h2>🎯 마케팅 제안</h2>
+        <div class="marketing">건강식품 관련 정보와 혜택을 강조한 맞춤형 마케팅을 통해 고객의 관심을 끌 수 있습니다. 또한, 고객의 구매 이력을 기반으로 유사한 제품 추천을 통해 재구매를 유도하는 전략이 효과적일 것입니다.</div>
+    </div>
+    
+    <div class="card">
+        <h2>📋 원본 데이터</h2>
+        <pre>=== 고객 기본 정보 ===
+- 연령: 62세
+- 지역: 인천광역시 부평구
+- 회원등급: DIAMOND
+- 총주문건수: 2건
+- 총주문금액: 113,600원
+- 사용적립금: 1,000원
+- SMS수신동의: Y
+- 앱푸시동의: Y
+
+=== 주문 실적 (2건) ===
+1. 2025-09-01 10:30 | 배한호 알부민967 1박스 30병 | 74,000원 | 할인 5,000원 | 적립금 0원 | 취소수량 0
+2. 2024-10-01 00:19 | 슈리오 소가죽 컴포트 스니커즈 | 39,600원 | 할인 4,400원 | 적립금 1,000원 | 취소수량 0
+
+=== 상품 조회 로그 (2건) ===
+1. 2025-09-01 10:28 | [방송에서만] 배한호 원장의 알부민967 2+1박스 (90병) | 건강식품 > 비타민/미네랄/영양제 | 모바일APP
+2. 2025-09-01 17:06 | [방송에서만] 배한호 원장의 알부민967 2+1박스 (90병) | 건강식품 > 비타민/미네랄/영양제 | 모바일APP
+
+=== 주문 로그 (1건) ===
+1. 2025-09-01 10:30 | 배한호 원장의 알부민967 1박스(30병) | 건강식품 > 비타민/미네랄/영양제 | 모바일APP</pre>
+    </div>
+    
+    <footer style="text-align: center; color: #999; padding: 20px;">
+        쇼핑엔티 고객 MBTI 분석 시스템 | Generated by GPT-4o-mini
+    </footer>
+</body>
+</html>
