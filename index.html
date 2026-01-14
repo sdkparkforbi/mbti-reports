@@ -6,48 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고객 MBTI 분석 리포트</title>
     <style>
-        body { font-family: 'Noto Sans KR', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        body { font-family: 'Noto Sans KR', sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
         .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        h1 { color: #333; border-bottom: 3px solid #4CAF50; padding-bottom: 10px; }
-        h2 { color: #4CAF50; margin-top: 0; }
-        .mbti-type { font-size: 48px; font-weight: bold; text-align: center; color: #2196F3; letter-spacing: 8px; }
-        .dimension { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #eee; }
+        h1 { color: #333; border-bottom: 3px solid #8E44AD; padding-bottom: 10px; }
+        h2 { color: #8E44AD; margin-top: 0; }
+        h3 { color: #666; margin-bottom: 10px; }
+        .mbti-type { font-size: 64px; font-weight: bold; text-align: center; color: #8E44AD; letter-spacing: 12px; margin: 20px 0; }
+        .dimension { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #eee; }
         .dimension:last-child { border-bottom: none; }
-        .dim-label { font-weight: bold; color: #666; }
-        .dim-result { font-size: 24px; font-weight: bold; color: #4CAF50; }
-        .confidence { font-size: 12px; padding: 4px 8px; border-radius: 12px; }
-        .confidence-높음 { background: #4CAF50; color: white; }
-        .confidence-중간 { background: #FF9800; color: white; }
-        .confidence-낮음 { background: #9E9E9E; color: white; }
-        .reason { font-size: 14px; color: #666; margin-top: 8px; }
-        .summary { background: #E3F2FD; padding: 16px; border-radius: 8px; line-height: 1.6; }
-        .marketing { background: #FFF3E0; padding: 16px; border-radius: 8px; line-height: 1.6; }
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .info-item { padding: 8px; background: #f9f9f9; border-radius: 4px; }
-        .info-label { font-size: 12px; color: #999; }
-        .info-value { font-size: 16px; font-weight: bold; color: #333; }
-        pre { background: #f5f5f5; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; }
+        .dim-label { font-weight: bold; color: #666; font-size: 14px; }
+        .dim-result { font-size: 32px; font-weight: bold; color: #8E44AD; }
+        .confidence { font-size: 12px; padding: 4px 12px; border-radius: 12px; margin-left: 8px; }
+        .confidence-높음 { background: #27AE60; color: white; }
+        .confidence-중간 { background: #F39C12; color: white; }
+        .confidence-낮음 { background: #95A5A6; color: white; }
+        .reason { font-size: 14px; color: #555; margin-top: 8px; line-height: 1.6; max-width: 500px; }
+        .summary { background: #F4ECF7; padding: 20px; border-radius: 8px; line-height: 1.8; border-left: 4px solid #8E44AD; }
+        .marketing { background: #FEF9E7; padding: 20px; border-radius: 8px; line-height: 1.8; border-left: 4px solid #F39C12; }
+        .info-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+        .info-item { padding: 12px; background: #f9f9f9; border-radius: 8px; text-align: center; }
+        .info-label { font-size: 12px; color: #999; margin-bottom: 4px; }
+        .info-value { font-size: 18px; font-weight: bold; color: #333; }
+        table { font-size: 14px; }
+        th, td { padding: 10px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f9f9f9; }
+        pre { background: #f5f5f5; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 11px; white-space: pre-wrap; max-height: 400px; }
+        .legend { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+        .legend-item { display: flex; align-items: center; gap: 4px; font-size: 12px; }
+        .legend-color { width: 16px; height: 16px; border-radius: 4px; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>🎯 고객 MBTI 분석 리포트</h1>
-        <p>고객 ID: 6zoEPM3iDgGaKVx/be6+...</p>
+        <p style="color:#666;">분석 대상: I5DML4EvRHuGzKqej7irrwAA==AAwA...</p>
     </div>
 
     <div class="card">
-        <h2>📊 기본 정보</h2>
+        <h2>📊 고객 기본 정보</h2>
         <div class="info-grid">
-            <div class="info-item"><div class="info-label">연령</div><div class="info-value">48세</div></div>
-            <div class="info-item"><div class="info-label">지역</div><div class="info-value">경상북도</div></div>
-            <div class="info-item"><div class="info-label">회원등급</div><div class="info-value">VIP</div></div>
-            <div class="info-item"><div class="info-label">총주문</div><div class="info-value">7건 / 326,410원</div></div>
+            <div class="info-item"><div class="info-label">연령</div><div class="info-value">81세</div></div>
+            <div class="info-item"><div class="info-label">지역</div><div class="info-value">경기도</div></div>
+            <div class="info-item"><div class="info-label">회원등급</div><div class="info-value">GOLD</div></div>
+            <div class="info-item"><div class="info-label">총주문</div><div class="info-value">10건</div></div>
         </div>
     </div>
 
     <div class="card">
         <h2>🧠 MBTI 분석 결과</h2>
-        <div class="mbti-type">xSTJ</div>
+        <div class="mbti-type">ISTJ</div>
     </div>
 
     <div class="card">
@@ -55,19 +62,19 @@
 
         <div class="dimension">
             <div>
-                <div class="dim-label">E(외향) vs I(내향)</div>
-                <div class="reason">쇼핑 데이터만으로 판단 어려움</div>
+                <div class="dim-label">E(외향) vs I(내향) - "함께하냐"</div>
+                <div class="reason">방송편성표율(0.0%, 0.0%)과 이벤트참여율(0.0%, 0.0%)이 매우 낮아 혼자서 독립적으로 탐색하는 성향이 강함.</div>
             </div>
             <div style="text-align: right;">
-                <div class="dim-result">x</div>
-                <span class="confidence confidence-낮음">낮음</span>
+                <div class="dim-result">I</div>
+                <span class="confidence confidence-높음">높음</span>
             </div>
         </div>
 
         <div class="dimension">
             <div>
-                <div class="dim-label">S(감각) vs N(직관)</div>
-                <div class="reason">고객은 기능성 의류와 같은 구체적이고 실용적인 상품을 선호하며, 현재의 트렌드와 실용성을 중시하는 경향이 보임.</div>
+                <div class="dim-label">S(감각) vs N(직관) - "집중이냐"</div>
+                <div class="reason">카테고리집중배율(1.3%, 1.3%)이 매우 낮고, 상품재조회율(50.0%)이 평균 수준으로 특정 카테고리에 집중하는 경향이 있음.</div>
             </div>
             <div style="text-align: right;">
                 <div class="dim-result">S</div>
@@ -77,19 +84,19 @@
 
         <div class="dimension">
             <div>
-                <div class="dim-label">T(사고) vs F(감정)</div>
-                <div class="reason">주문한 상품들이 기능성과 가격을 고려한 합리적인 선택으로 보이며, 감정적 요소보다는 논리적 판단이 우세할 가능성이 있음.</div>
+                <div class="dim-label">T(사고) vs F(감정) - "혜택 중시"</div>
+                <div class="reason">딜상세이용률(89.0%)이 매우 높고, 쇼타임딜률(0.0%)이 낮아 가격/조건을 꼼꼼히 비교하는 성향이 강함.</div>
             </div>
             <div style="text-align: right;">
                 <div class="dim-result">T</div>
-                <span class="confidence confidence-중간">중간</span>
+                <span class="confidence confidence-높음">높음</span>
             </div>
         </div>
 
         <div class="dimension">
             <div>
-                <div class="dim-label">J(판단) vs P(인식)</div>
-                <div class="reason">주문 패턴이 일정하고 계획적으로 보이며, VIP 회원으로서 체계적인 쇼핑을 선호할 가능성이 있음.</div>
+                <div class="dim-label">J(판단) vs P(인식) - "규칙적이냐"</div>
+                <div class="reason">요일집중배율(39.7%)과 시간대집중배율(38.9%)이 낮은 편으로, 규칙적인 쇼핑 성향이 다소 보이나 불규칙적인 요소도 존재함.</div>
             </div>
             <div style="text-align: right;">
                 <div class="dim-result">J</div>
@@ -99,91 +106,262 @@
     </div>
 
     <div class="card">
+        <h2>📊 정량 지표 상세</h2>
+        
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background:#E74C3C;"></div>80%↑ 매우높음</div>
+            <div class="legend-item"><div class="legend-color" style="background:#E67E22;"></div>60-80% 높음</div>
+            <div class="legend-item"><div class="legend-color" style="background:#F1C40F;"></div>40-60% 평균</div>
+            <div class="legend-item"><div class="legend-color" style="background:#3498DB;"></div>20-40% 낮음</div>
+            <div class="legend-item"><div class="legend-color" style="background:#95A5A6;"></div>20%↓ 매우낮음</div>
+        </div>
+        
+        
+        <h3>실적 지표 (주문 데이터 기반)</h3>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="background:#8E44AD; color:white;">
+                <th style="padding:12px; text-align:left;">지표명</th>
+                <th style="padding:12px; text-align:right;">값</th>
+                <th style="padding:12px; text-align:center;">퍼센타일</th>
+                <th style="padding:12px; text-align:center;">MBTI</th>
+            </tr>
+            
+            <tr>
+                <td>할인율</td>
+                <td style="text-align:right;">0.0557</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">19.6%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">-</td>
+            </tr>
+            
+            <tr>
+                <td>적립금비율</td>
+                <td style="text-align:right;">0.0200</td>
+                <td style="text-align:center;">
+                    <span style="background:#F1C40F; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">44.6%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">-</td>
+            </tr>
+            
+            <tr>
+                <td>요일집중배율</td>
+                <td style="text-align:right;">3.0000</td>
+                <td style="text-align:center;">
+                    <span style="background:#3498DB; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">39.7%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">J↑</td>
+            </tr>
+            
+            <tr>
+                <td>시간대집중배율</td>
+                <td style="text-align:right;">2.2857</td>
+                <td style="text-align:center;">
+                    <span style="background:#3498DB; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">38.9%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">J↑</td>
+            </tr>
+            
+            <tr>
+                <td>카테고리집중배율(실적)</td>
+                <td style="text-align:right;">8.5714</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">1.3%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">S↑</td>
+            </tr>
+            
+        </table>
+        
+        
+        <h3>로그 지표 (상품조회 로그 기반)</h3>
+        <table style="width:100%; border-collapse:collapse; margin-bottom:20px;">
+            <tr style="background:#8E44AD; color:white;">
+                <th style="padding:12px; text-align:left;">지표명</th>
+                <th style="padding:12px; text-align:right;">값</th>
+                <th style="padding:12px; text-align:center;">퍼센타일</th>
+                <th style="padding:12px; text-align:center;">MBTI</th>
+            </tr>
+            
+            <tr>
+                <td>방송편성표율</td>
+                <td style="text-align:right;">0.0000</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">0.0%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">E↑</td>
+            </tr>
+            
+            <tr>
+                <td>이벤트참여율</td>
+                <td style="text-align:right;">0.0000</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">0.0%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">E↑</td>
+            </tr>
+            
+            <tr>
+                <td>추천클릭률</td>
+                <td style="text-align:right;">0.0294</td>
+                <td style="text-align:center;">
+                    <span style="background:#E67E22; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">67.5%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">E↑</td>
+            </tr>
+            
+            <tr>
+                <td>카테고리집중배율(로그)</td>
+                <td style="text-align:right;">15.5000</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">14.8%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">S↑</td>
+            </tr>
+            
+            <tr>
+                <td>상품재조회율</td>
+                <td style="text-align:right;">0.3478</td>
+                <td style="text-align:center;">
+                    <span style="background:#F1C40F; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">50.0%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">S↑</td>
+            </tr>
+            
+            <tr>
+                <td>기획전이용률</td>
+                <td style="text-align:right;">0.0588</td>
+                <td style="text-align:center;">
+                    <span style="background:#E67E22; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">60.2%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">N↑</td>
+            </tr>
+            
+            <tr>
+                <td>딜상세이용률</td>
+                <td style="text-align:right;">0.0294</td>
+                <td style="text-align:center;">
+                    <span style="background:#E74C3C; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">89.0%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">T↑</td>
+            </tr>
+            
+            <tr>
+                <td>쇼타임딜률</td>
+                <td style="text-align:right;">0.0000</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">0.0%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">T↑</td>
+            </tr>
+            
+            <tr>
+                <td>시간대집중배율(로그)</td>
+                <td style="text-align:right;">1.7647</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">14.7%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">J↑</td>
+            </tr>
+            
+            <tr>
+                <td>요일집중배율(로그)</td>
+                <td style="text-align:right;">2.2647</td>
+                <td style="text-align:center;">
+                    <span style="background:#95A5A6; color:white; padding:4px 8px; border-radius:12px; font-size:12px;">17.9%</span>
+                </td>
+                <td style="text-align:center; font-weight:bold; color:#8E44AD;">J↑</td>
+            </tr>
+            
+        </table>
+        
+    </div>
+
+    <div class="card">
         <h2>💡 종합 분석</h2>
-        <div class="summary">이 고객은 실용적이고 기능적인 상품을 선호하며, 논리적이고 계획적인 쇼핑 스타일을 가지고 있는 것으로 보입니다. 외향성 여부는 판단하기 어렵습니다.</div>
+        <div class="summary">이 고객은 내향적이며, 감각적이고, 사고 중심적이며, 판단적인 성향을 가지고 있습니다. 쇼핑 시 가격과 조건을 중시하고, 특정 카테고리에 집중하는 경향이 강합니다.</div>
     </div>
 
     <div class="card">
         <h2>🎯 마케팅 제안</h2>
-        <div class="marketing">기능성 의류 및 실용적인 상품을 중심으로 한 맞춤형 프로모션과 할인 혜택을 제공하는 것이 효과적일 것입니다.</div>
+        <div class="marketing">가격 할인 및 조건 비교를 강조하는 마케팅 전략을 추천합니다. 또한, 특정 카테고리의 상품을 중심으로 한 맞춤형 추천을 통해 고객의 관심을 끌 수 있습니다.</div>
     </div>
 
     <div class="card">
         <h2>📋 원본 데이터</h2>
         <pre>=== 고객 기본 정보 ===
-- 연령: 48세
-- 지역: 경상북도 칠곡군
-- 회원등급: VIP
-- 총주문건수: 7건
-- 총주문금액: 326,410원
-- 사용적립금: 4,800원
-- SMS수신동의: Y
-- 앱푸시동의: None
+- 연령: 81세
+- 지역: 경기도 부천시 오정구
+- 회원등급: GOLD
+- 총주문건수: 10건
+- 총주문금액: 498,000원
+- 사용적립금: 0원
 
-=== 주문 실적 (7건) ===
-1. 2025-07-02 20:24 | 남성 25SS 르까프 기능성 반팔 셔츠 5종 | 48,000원 | 할인 1,000원 | 적립금 0원 | 취소수량 0
-2. 2025-08-08 13:31 | 25SS 트렉스타 남녀공용 냉감 티셔츠6종 | 48,900원 | 할인 1,000원 | 적립금 4,800원 | 취소수량 0
-3. 2025-08-08 13:34 | 25SS 트렉스타 남녀공용 냉감 티셔츠6종 | 48,900원 | 할인 1,000원 | 적립금 4,800원 | 취소수량 0
-4. 2025-08-08 13:58 | 김영주골프 반팔집업 4종, 남성 | 38,900원 | 할인 1,000원 | 적립금 0원 | 취소수량 0
-5. 2025-08-26 15:46 | 남성 25SS 르까프 조거 팬츠 3종 | 48,900원 | 할인 1,000원 | 적립금 0원 | 취소수량 0
-6. 2025-08-26 18:39 | ELLE SPORT 남성 아이스 조거팬츠3종 | 38,900원 | 할인 1,000원 | 적립금 0원 | 취소수량 0
-7. 2025-05-18 12:31 | 직2 25SS 몽크로스 썸머 팬츠 4종 남성 | 53,910원 | 할인 5,990원 | 적립금 0원 | 취소수량 0
+=== 실적 지표 (주문 데이터 기반) ===
+| 지표명 | 값 | 퍼센타일 | MBTI 연관 |
+|--------|-----|----------|-----------|
+| 할인율 | 0.0557 | 19.6% | - |
+| 적립금비율 | 0.0200 | 44.6% | - |
+| 요일집중배율 | 3.0000 | 39.7% | J↑ |
+| 시간대집중배율 | 2.2857 | 38.9% | J↑ |
+| 카테고리집중배율(실적) | 8.5714 | 1.3% | S↑ |
 
-=== 상품 조회 로그 (43건) ===
-1. 2025-08-01 15:53 | 비비아체 쏘로우 스커트핏 팬츠1+1+1 | 의류 > 일반의류-하의 | 모바일APP
-2. 2025-08-08 13:34 | 25SS GOLD PFEIL 워셔블 반팔 스판셔츠 4종 | 의류 > 의류세트 | 모바일APP
-3. 2025-08-08 13:35 | 밀레골프 25SS 최신상! 고 기능성 반팔티셔츠 5종, 남성 | 의류 > 골프웨어 | 모바일APP
-4. 2025-08-08 13:35 | [KYJ GOLF] 김영주골프 최종가! 기능성 에어쿨링 반팔 집업 티셔츠 4종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-5. 2025-08-08 13:35 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-6. 2025-08-08 13:45 | [MD강력추천] 르까프 25SS 파격초특가! 냉감 반팔 카라 티셔츠 5종, 남성 | 의류 > 기타스포츠웨어 | 모바일APP
-7. 2025-08-08 13:47 | [KYJ GOLF] 김영주골프 최종가! 기능성 에어쿨링 반팔 집업 티셔츠 4종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-8. 2025-08-08 14:05 | [KYJ GOLF] 김영주골프 최종가! 기능성 에어쿨링 반팔 집업 티셔츠 4종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-9. 2025-08-08 15:02 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-10. 2025-08-10 10:14 | 아디다스골프 얼티메이트 솔리드 반팔 티셔츠 네이비 GM4133 | 의류 > 골프웨어 | 모바일APP
-11. 2025-08-11 13:13 | 싱글부하우스 이불 압축파우치 특대형2+대형1 | 청소/생활잡화 > 정리용품 | 모바일APP
-12. 2025-08-11 14:39 | [KYJ GOLF] 김영주골프 최종가! 기능성 에어쿨링 반팔 집업 티셔츠 4종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-13. 2025-08-11 15:22 | 싱글부하우스 이불 압축파우치 특대형2+대형1 | 청소/생활잡화 > 정리용품 | 모바일APP
-14. 2025-08-16 22:27 | 하나투어 방콕,파타야 5일 (파타야 5성UP+요트크루즈+핫플관광) | 여행/서비스/금융 > 해외여행 | 모바일APP
-15. 2025-08-22 23:04 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-16. 2025-08-26 15:12 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-17. 2025-08-26 15:19 | 남성 썸머 에어 팬츠 3종세트 | 의류 > 일반의류-상의 | 모바일APP
-18. 2025-08-26 15:19 | 르까프 25SS 초특가! 썸머 기능성 냉감 팬츠 3종, 남성 | 의류 > 트레이닝/스포츠의류/소품 | 모바일APP
-19. 2025-08-26 15:21 | 카고 냉감 여름팬츠 1+1 (남성) | 의류 > 등산의류 | 모바일APP
-20. 2025-08-26 15:27 | 남자 여름카고조거팬츠 린넨 면 남성밴딩조거바지 (WC86964) | 의류 > 일반의류-하의 | 모바일APP
-21. 2025-08-26 15:29 | 르까프 25SS 냉감 에어리 조거팬츠 3종, 남성 | 의류 > 기타스포츠웨어 | 모바일APP
-22. 2025-08-26 17:06 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-23. 2025-08-26 17:06 | 르까프 25SS 초특가! 썸머 기능성 냉감 팬츠 3종, 남성 | 의류 > 트레이닝/스포츠의류/소품 | 모바일APP
-24. 2025-08-26 17:07 | 레드캠프 아이스 쿨링팬츠 3종 (남) | 의류 > 기타스포츠웨어 | 모바일APP
-25. 2025-08-26 17:07 | 레드캠프 아이스 쿨링팬츠 3종 (남) | 의류 > 기타스포츠웨어 | 모바일APP
-26. 2025-08-26 17:09 | 25SS ELLE SPORT 남성 아이스 조거팬츠 3종 | 의류 > 의류세트 | 모바일APP
-27. 2025-08-26 17:09 | 25SS ELLE SPORT 남성 아이스 조거팬츠 3종 | 의류 > 의류세트 | 모바일APP
-28. 2025-08-26 17:17 | 쿨링 여름 팬츠 1+1 (남성) | 의류 > 등산의류 | 모바일APP
-29. 2025-08-26 17:17 | 카고 냉감 여름팬츠 1+1 (남성) | 의류 > 등산의류 | 모바일APP
-30. 2025-08-26 17:20 | 카고 냉감 여름팬츠 1+1 (남성) | 의류 > 등산의류 | 모바일APP
-31. 2025-08-26 18:38 | 25SS ELLE SPORT 남성 아이스 조거팬츠 3종 | 의류 > 의류세트 | 모바일APP
-32. 2025-09-02 19:53 | [무려 8종?!]아보크 파격구성! 기능성  쿨 스판 카라 티셔츠 8종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-33. 2025-09-11 11:59 | 아디다스골프 얼티메이트 솔리드 반팔 티셔츠 네이비 GM4133 | 의류 > 골프웨어 | 모바일APP
-34. 2025-09-16 11:51 | 아디다스골프 얼티메이트 솔리드 반팔 티셔츠 네이비 GM4133 | 의류 > 골프웨어 | 모바일APP
-35. 2025-09-17 21:11 | 아디다스골프 얼티메이트 솔리드 반팔 티셔츠 네이비 GM4133 | 의류 > 골프웨어 | 모바일APP
-36. 2025-09-19 15:54 | 르까프 25SS 초특가! 썸머 기능성 냉감 팬츠 3종, 남성 | 의류 > 트레이닝/스포츠의류/소품 | 모바일APP
-37. 2025-09-21 13:57 | 밀레골프 25SS 최신상! 고 기능성 반팔티셔츠 5종, 남성 | 의류 > 골프웨어 | 모바일APP
-38. 2025-09-22 16:01 | 르까프 24SS 썸머 기능성 PK 반팔 티셔츠 5종, 여성 | 의류 > 의류세트 | 모바일APP
-39. 2025-09-23 11:09 | 피크나인 PP08006 여름 카고팬츠 등산바지 남성 작업복 건빵바지 | 의류 > 등산의류 | 모바일APP
-40. 2025-09-24 15:28 | 피크나인 PP08006 여름 카고팬츠 등산바지 남성 작업복 건빵바지 | 의류 > 등산의류 | 모바일APP
-41. 2025-09-30 11:43 | 피크나인 PP08006 여름 카고팬츠 등산바지 남성 작업복 건빵바지 | 의류 > 등산의류 | 모바일APP
-42. 2025-09-30 11:48 | 이경제 흑염소진액眞 4박스(120포) | 건강식품 > 전통건강식품 | 모바일APP
-43. 2025-09-30 11:55 | 25SS 잭필드 남성 반팔셔츠 5종  | 의류 > 일반의류-상의 | 모바일APP
+=== 로그 지표 (상품조회 로그 기반) ===
+| 지표명 | 값 | 퍼센타일 | MBTI 연관 |
+|--------|-----|----------|-----------|
+| 방송편성표율 | 0.0000 | 0.0% | E↑ |
+| 이벤트참여율 | 0.0000 | 0.0% | E↑ |
+| 추천클릭률 | 0.0294 | 67.5% | E↑ |
+| 카테고리집중배율(로그) | 15.5000 | 14.8% | S↑ |
+| 상품재조회율 | 0.3478 | 50.0% | S↑ |
+| 기획전이용률 | 0.0588 | 60.2% | N↑ |
+| 딜상세이용률 | 0.0294 | 89.0% | T↑ |
+| 쇼타임딜률 | 0.0000 | 0.0% | T↑ |
+| 시간대집중배율(로그) | 1.7647 | 14.7% | J↑ |
+| 요일집중배율(로그) | 2.2647 | 17.9% | J↑ |
 
-=== 주문 로그 (5건) ===
-1. 2025-08-08 13:31 | [백화점 판매동일] 트렉스타 초특가! 기능성 냉감 티셔츠 6종, 남녀공용 | 의류 > 기타스포츠웨어 | 모바일APP
-2. 2025-08-08 13:34 | [백화점 판매동일] 트렉스타 초특가! 기능성 냉감 티셔츠 6종, 남녀공용 | 의류 > 기타스포츠웨어 | 모바일APP
-3. 2025-08-08 13:58 | [KYJ GOLF] 김영주골프 최종가! 기능성 에어쿨링 반팔 집업 티셔츠 4종, 남성 | 의류 > 일반의류-상의 | 모바일APP
-4. 2025-08-26 15:46 | 르까프 25SS 냉감 에어리 조거팬츠 3종, 남성 | 의류 > 기타스포츠웨어 | 모바일APP
-5. 2025-08-26 18:39 | 25SS ELLE SPORT 남성 아이스 조거팬츠 3종 | 의류 > 의류세트 | 모바일APP</pre>
+=== 주문 실적 (10건) ===
+1. 2025-07-15 11:52 | [6개구성] 포티니 만능 선반  | 69,800원 | 할인 1,000원
+2. 2025-07-30 13:03 | 앙드레김 golf 양우산 1+1세트 | 49,900원 | 할인 5,000원
+3. 2025-07-30 13:03 | 앙드레김 golf 양우산 1+1세트 | 0원 | 할인 0원
+4. 2025-08-02 14:20 | 앙드레김 golf 양우산 1세트 | 39,900원 | 할인 0원
+5. 2025-08-05 10:40 | 2024 동서천농협 서리태콩 500g X 4팩 (총 2Kg) | 30,900원 | 할인 4,000원
+6. 2025-09-02 13:10 | [방송에서만] 엘클레어 필링젤 8종 세트 | 58,900원 | 할인 1,000원
+7. 2025-06-02 14:08 | 24SS 마담엘레강스 해피 쿨 썸머 팬츠 3종 | 58,900원 | 할인 1,000원
+8. 2025-06-03 09:47 | 25SS 밀레골프 반팔카라티 3종 여성 | 68,000원 | 할인 1,000원
+9. 2025-06-06 15:06 | 도티 RN스판팬츠 여성3종 RNBW | 48,900원 | 할인 1,000원
+10. 2025-06-27 09:32 | 잭앤질 말랑 폭신 숏 레인부츠(JB3300) | 23,900원 | 할인 11,000원
+
+=== 상품 조회 로그 (34건, 최대 20건 표시) ===
+1. 2025-08-01 11:55 | 기라로쉬 앤티크플라워 암막 자동양산 MPGLP40053 | 패션잡화/보석 | 클릭:기본진입
+2. 2025-08-01 21:06 | 앙드레김 golf 3단 자동 양우산 1세트 | 패션잡화/보석 | 클릭:기본진입
+3. 2025-08-02 10:26 | 앙드레김 golf 3단 자동 양우산 1세트 | 패션잡화/보석 | 클릭:기본진입
+4. 2025-08-02 14:13 | 앙드레김 golf 3단 자동 양우산 1세트 | 패션잡화/보석 | 클릭:기본진입
+5. 2025-08-02 14:16 | 앙드레김 golf 3단 자동 양우산 1세트 | 패션잡화/보석 | 클릭:기본진입
+6. 2025-08-02 16:22 | [25년 햇! 국내산 고춧가루] 본초 고춧가루 500g × 8팩 (총 4kg) | 일반식품 | 클릭:SPEX0000
+7. 2025-08-02 16:32 | 피에르가르뎅 베르사유 양산 PI1916 | 패션잡화/보석 | 클릭:기본진입
+8. 2025-08-03 18:27 | 모나리자 땡큐 화장지 30m 30롤 3개 | 이미용 | 클릭:기본진입
+9. 2025-08-05 10:39 | 2024 동서천농협 서리태콩 500g X 4팩 (총 2Kg) | 일반식품 | 클릭:기본진입
+10. 2025-08-12 13:32 | G[목우촌] 주부9단 인기햄류 세트 (살코기1kg+비엔나소시지450g+프랑크소시지500g) | 일반식품 | 클릭:기본진입
+11. 2025-08-15 09:49 | [우아한소] 부드러운 안창살(200gx5)1kg | 일반식품 | 클릭:기본진입
+12. 2025-08-15 09:51 | [우아한소] 부드러운 안창살(200gx5)1kg | 일반식품 | 클릭:기본진입
+13. 2025-08-16 10:15 | [우아한소] 부드러운 안창살(200gx5)1kg | 일반식품 | 클릭:기본진입
+14. 2025-08-27 00:09 | [백화농원] 스위트 허니 국내산 벌꿀 2kg x 2 | 일반식품 | 클릭:기본진입
+15. 2025-08-31 19:04 | 삼육두유 블랙푸드 세트 총 80팩 (검은콩과칼슘 두유 3박스(60팩)+흑임자 두유 1박스(20팩)) | 일반식품 | 클릭:기본진입
+16. 2025-08-31 19:04 | [쇼핑엔티 단독구성!!] 삼육 검은콩과 칼슘 + 삼육두유 (총 80팩) | 일반식품 | 클릭:기본진입
+17. 2025-08-31 19:07 | 삼육두유 블랙푸드 세트 총 80팩 (검은콩과칼슘 두유 3박스(60팩)+흑임자 두유 1박스(20팩)) | 일반식품 | 클릭:기본진입
+18. 2025-09-01 12:11 | 시원한 백제 열무김치 3kg | 일반식품 | 클릭:기본진입
+19. 2025-09-03 09:56 | (신상품특가!)좋은칫솔K 초극세모 10입+10입+10입 | 이미용 | 클릭:기본진입
+20. 2025-09-03 09:58 | [시즌2] 엘루자이 멀티 콜라겐 링클밤 5개 | 이미용 | 클릭:기본진입
+
+=== 주문 로그 (3건) ===
+1. 2025-08-02 14:20 | 앙드레김 golf 3단 자동 양우산 1세트 | 패션잡화/보석
+2. 2025-08-05 10:40 | 2024 동서천농협 서리태콩 500g X 4팩 (총 2Kg) | 일반식품
+3. 2025-09-02 13:10 | 묵은 각질 이젠 안녕~ 엘클레어 필링젤 8종 세트(아보카도2,라벤더2,레몬2+로즈2)  | 이미용</pre>
     </div>
 
     <footer style="text-align: center; color: #999; padding: 20px;">
-        쇼핑엔티 고객 MBTI 분석 시스템 | Generated by GPT-4o-mini
+        쇼핑엔티 고객 MBTI 분석 시스템 | Generated by GPT-4o-mini | 2026-01-14 17:22
     </footer>
 </body>
 </html>
