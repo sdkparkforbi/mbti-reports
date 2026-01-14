@@ -12,15 +12,15 @@
         h2 { color: #8E44AD; margin-top: 0; }
         h3 { color: #666; margin-bottom: 10px; }
         .mbti-type { font-size: 64px; font-weight: bold; text-align: center; color: #8E44AD; letter-spacing: 12px; margin: 20px 0; }
-        .dimension { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #eee; }
-        .dimension:last-child { border-bottom: none; }
-        .dim-label { font-weight: bold; color: #666; font-size: 14px; }
-        .dim-result { font-size: 32px; font-weight: bold; color: #8E44AD; }
+        .dimension { background: #FAFAFA; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+        .dim-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .dim-label { font-weight: bold; color: #8E44AD; font-size: 16px; }
+        .dim-result { font-size: 36px; font-weight: bold; color: #8E44AD; }
         .confidence { font-size: 12px; padding: 4px 12px; border-radius: 12px; margin-left: 8px; }
         .confidence-높음 { background: #27AE60; color: white; }
         .confidence-중간 { background: #F39C12; color: white; }
         .confidence-낮음 { background: #95A5A6; color: white; }
-        .reason { font-size: 14px; color: #555; margin-top: 8px; line-height: 1.6; max-width: 500px; }
+        .reason { font-size: 15px; color: #333; line-height: 1.8; background: #FFF; padding: 16px; border-radius: 8px; border-left: 4px solid #8E44AD; }
         .summary { background: #F4ECF7; padding: 20px; border-radius: 8px; line-height: 1.8; border-left: 4px solid #8E44AD; }
         .marketing { background: #FEF9E7; padding: 20px; border-radius: 8px; line-height: 1.8; border-left: 4px solid #F39C12; }
         .info-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
@@ -61,47 +61,47 @@
         <h2>📈 차원별 분석</h2>
 
         <div class="dimension">
-            <div>
+            <div class="dim-header">
                 <div class="dim-label">E(외향) vs I(내향) - "함께하냐"</div>
-                <div class="reason">방송편성표율(0.0%, 0.0%)과 이벤트참여율(0.0%, 0.0%)이 매우 낮아 혼자서 독립적으로 탐색하는 성향이 강함.</div>
+                <div style="display:flex; align-items:center;">
+                    <div class="dim-result">I</div>
+                    <span class="confidence confidence-높음">높음</span>
+                </div>
             </div>
-            <div style="text-align: right;">
-                <div class="dim-result">I</div>
-                <span class="confidence confidence-높음">높음</span>
-            </div>
+            <div class="reason">📊 방송편성표율 0.0000(0.0%), 이벤트참여율 0.0000(0.0%), 추천클릭률 0.0294(67.5%) → 방송편성표율과 이벤트참여율이 매우 낮아 혼자서 독립적으로 탐색하는 I 성향으로 추정됨</div>
         </div>
 
         <div class="dimension">
-            <div>
+            <div class="dim-header">
                 <div class="dim-label">S(감각) vs N(직관) - "집중이냐"</div>
-                <div class="reason">카테고리집중배율(1.3%, 1.3%)이 매우 낮고, 상품재조회율(50.0%)이 평균 수준으로 특정 카테고리에 집중하는 경향이 있음.</div>
+                <div style="display:flex; align-items:center;">
+                    <div class="dim-result">S</div>
+                    <span class="confidence confidence-높음">높음</span>
+                </div>
             </div>
-            <div style="text-align: right;">
-                <div class="dim-result">S</div>
-                <span class="confidence confidence-높음">높음</span>
-            </div>
+            <div class="reason">📊 카테고리집중배율 8.5714(1.3%), 상품재조회율 0.3478(50.0%), 기획전이용률 0.0588(60.2%) → 카테고리집중배율이 매우 낮고, 상품재조회율은 평균 수준으로 신중한 S 성향으로 추정됨</div>
         </div>
 
         <div class="dimension">
-            <div>
+            <div class="dim-header">
                 <div class="dim-label">T(사고) vs F(감정) - "혜택 중시"</div>
-                <div class="reason">딜상세이용률(89.0%)이 매우 높고, 쇼타임딜률(0.0%)이 낮아 가격/조건을 꼼꼼히 비교하는 성향이 강함.</div>
+                <div style="display:flex; align-items:center;">
+                    <div class="dim-result">T</div>
+                    <span class="confidence confidence-높음">높음</span>
+                </div>
             </div>
-            <div style="text-align: right;">
-                <div class="dim-result">T</div>
-                <span class="confidence confidence-높음">높음</span>
-            </div>
+            <div class="reason">📊 딜상세이용률 0.0294(89.0%), 쇼타임딜률 0.0000(0.0%), 할인율 0.0557(19.6%) → 딜상세이용률이 매우 높아 가격/조건 꼼꼼히 비교하는 T 성향으로 추정됨</div>
         </div>
 
         <div class="dimension">
-            <div>
+            <div class="dim-header">
                 <div class="dim-label">J(판단) vs P(인식) - "규칙적이냐"</div>
-                <div class="reason">요일집중배율(39.7%)과 시간대집중배율(38.9%)이 낮은 편으로, 규칙적인 쇼핑 성향이 다소 보이나 불규칙적인 요소도 존재함.</div>
+                <div style="display:flex; align-items:center;">
+                    <div class="dim-result">J</div>
+                    <span class="confidence confidence-중간">중간</span>
+                </div>
             </div>
-            <div style="text-align: right;">
-                <div class="dim-result">J</div>
-                <span class="confidence confidence-중간">중간</span>
-            </div>
+            <div class="reason">📊 시간대집중배율 2.2857(38.9%), 요일집중배율 3.0000(39.7%) → 두 지표 모두 평균 이하로 다소 규칙적인 J 성향으로 추정됨</div>
         </div>
     </div>
 
@@ -279,12 +279,12 @@
 
     <div class="card">
         <h2>💡 종합 분석</h2>
-        <div class="summary">이 고객은 내향적이며, 감각적이고, 사고 중심적이며, 판단적인 성향을 가지고 있습니다. 쇼핑 시 가격과 조건을 중시하고, 특정 카테고리에 집중하는 경향이 강합니다.</div>
+        <div class="summary">이 고객은 내향적이며, 신중하게 정보를 탐색하고, 가격에 민감하며, 다소 규칙적인 쇼핑 패턴을 보이는 ISTJ 유형으로 추정됩니다. 이들은 일반적으로 신뢰할 수 있는 정보를 중시하며, 실용적인 결정을 내리는 경향이 있습니다.</div>
     </div>
 
     <div class="card">
         <h2>🎯 마케팅 제안</h2>
-        <div class="marketing">가격 할인 및 조건 비교를 강조하는 마케팅 전략을 추천합니다. 또한, 특정 카테고리의 상품을 중심으로 한 맞춤형 추천을 통해 고객의 관심을 끌 수 있습니다.</div>
+        <div class="marketing">이 고객에게는 할인 혜택이나 실용적인 상품 정보를 강조하는 마케팅 전략이 효과적일 것입니다. 또한, 정기적인 프로모션이나 추천 상품을 통해 신뢰를 구축하는 것이 중요합니다.</div>
     </div>
 
     <div class="card">
@@ -361,7 +361,7 @@
     </div>
 
     <footer style="text-align: center; color: #999; padding: 20px;">
-        쇼핑엔티 고객 MBTI 분석 시스템 | Generated by GPT-4o-mini | 2026-01-14 17:22
+        쇼핑엔티 고객 MBTI 분석 시스템 | Generated by GPT-4o-mini | 2026-01-14 17:29
     </footer>
 </body>
 </html>
